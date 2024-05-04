@@ -1,0 +1,6 @@
+<form action="/memos/<%= @memo['id'] %>/edit" method="post">
+  <input type="text" class="form" name="title" value="<%= h @memo['title'] %>" required>
+  <textarea class="form" name="content" required><%= h @memo['content'] %></textarea>
+  <input type="hidden" name='_method' value="patch">
+  <input type="submit" class="form" value="変更">
+</form>
