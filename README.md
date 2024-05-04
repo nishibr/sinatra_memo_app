@@ -1,7 +1,7 @@
 ## ローカル環境での実行手順 
 ターミナルで以下を実行
 ```
-$ git clone https://github.com/nishibr/sinatra_memo_app
+$ git clone -b my-memo-app https://github.com/nishibr/sinatra_memo_app
 
 $ cd sinatra_memo_app
 
