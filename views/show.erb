@@ -1,0 +1,15 @@
+<div>
+  <div>
+    <p><%= h(@memo['title']) %></p>
+    <p><%= h(@memo['content']).gsub(/\n/, '<br/>') %></p>
+  </div>
+  <div class="button-container">
+    <form action="/memos/<%= @memo['id'] %>/edit" method="get">
+      <input type="submit" value="編集" class="right-button">
+    </form>
+    <form action="/memos/<%= @memo['id'] %>" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <input type="submit" value="削除" class="right-button">
+    </form>
+  </div>
+</div>
